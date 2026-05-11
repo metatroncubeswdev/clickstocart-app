@@ -16,7 +16,6 @@ dependencies:
   webview_flutter: ^4.13.0
   flutter_launcher_icons: ^0.14.4
   flutter_native_splash: ^2.4.7
-  onesignal_flutter: ^5.3.4
   intl: ^0.20.2
   shared_preferences: ^2.5.3
   http: ^1.6.0
