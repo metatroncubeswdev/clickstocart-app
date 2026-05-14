@@ -61,8 +61,8 @@ class _WebViewWithNavState extends State<WebViewWithNav> {
       "/",
       "/all-products/",
       "/shop/",
-      "/cart/",
-      "/my-account/",
+      "/shop/cart/",
+      "/login/",
     ].map(_buildUrl).toList();
 
     if (reload && _controller != null) {
@@ -202,9 +202,9 @@ class _WebViewWithNavState extends State<WebViewWithNav> {
       newIndex = 1;
     } else if (path.contains("/shop")) {
       newIndex = 2;
-    } else if (path.contains("/cart")) {
+    } else if (path.contains("/shop/cart")) {
       newIndex = 3;
-    } else if (path.contains("/my-account")) {
+    } else if (path.contains("/login")) {
       newIndex = 4;
     }
 
