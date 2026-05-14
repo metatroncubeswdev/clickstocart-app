@@ -62,7 +62,7 @@ class _WebViewWithNavState extends State<WebViewWithNav> {
       "/all-products/",
       "/shop/",
       "/shop/cart/",
-      "/login/",
+      "/web/login/",
     ].map(_buildUrl).toList();
 
     if (reload && _controller != null) {
@@ -204,7 +204,7 @@ class _WebViewWithNavState extends State<WebViewWithNav> {
       newIndex = 2;
     } else if (path.contains("/shop/cart")) {
       newIndex = 3;
-    } else if (path.contains("/login")) {
+    } else if (path.contains("/web/login")) {
       newIndex = 4;
     }
 
@@ -428,7 +428,7 @@ class _WebViewWithNavState extends State<WebViewWithNav> {
       key: _scaffoldKey,
 
       appBar: AppBar(
-        backgroundColor: const Colors.white,
+        backgroundColor: Colors.white,
         leading: Builder(
           builder: (ctx) => IconButton(
             icon: const Icon(Icons.menu, color: Colors.black),
