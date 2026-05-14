@@ -428,18 +428,18 @@ class _WebViewWithNavState extends State<WebViewWithNav> {
       key: _scaffoldKey,
 
       appBar: AppBar(
-        backgroundColor: const Color(0xFFFC8000),
+        backgroundColor: const Colors.white,
         leading: Builder(
           builder: (ctx) => IconButton(
-            icon: const Icon(Icons.menu, color: Color(0xFFFFE1BC)),
+            icon: const Icon(Icons.menu, color: Colors.black),
             onPressed: () => Scaffold.of(ctx).openDrawer(),
           ),
         ),
         title: Row(
           children: [
-            Image.asset("assets/icons/cart_transp.png", height: 32),
-            const SizedBox(width: 10),
-            const Text("Clicks To Cart", style: TextStyle(color: Colors.white)),
+            Image.asset("assets/icons/clickstocart_logo.png", height: 32),
+            //const SizedBox(width: 10),
+            //const Text("Clicks To Cart", style: TextStyle(color: Colors.white)),
           ],
         ),
         actions: [
@@ -447,7 +447,7 @@ class _WebViewWithNavState extends State<WebViewWithNav> {
             child: DropdownButton<String>(
               value: _selectedCountry,
               dropdownColor: Colors.white,
-              icon: const Icon(Icons.public, color: Colors.white),
+              icon: const Icon(Icons.public, color: Colors.black),
               style: const TextStyle(color: Colors.black),
 
               // 👇 This controls how the selected value looks
