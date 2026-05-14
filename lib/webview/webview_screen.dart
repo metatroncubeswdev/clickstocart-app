@@ -437,7 +437,7 @@ class _WebViewWithNavState extends State<WebViewWithNav> {
         ),
         title: Row(
           children: [
-            Image.asset("assets/icons/clickstocart_logo.png", height: 32),
+            Image.asset("assets/icons/clickstocart_logo.png", height: 80),
             //const SizedBox(width: 10),
             //const Text("Clicks To Cart", style: TextStyle(color: Colors.white)),
           ],
