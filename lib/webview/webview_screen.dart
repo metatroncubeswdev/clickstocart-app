@@ -158,9 +158,17 @@ class _WebViewWithNavState extends State<WebViewWithNav> {
   }
 
   String _ensureAppAndVersion(String url) {
-    final uri = Uri.parse(url);
+    var uri = Uri.parse(url);
+
+    // Only operate on our domains
     if (!uri.host.contains("clickstocart")) return url;
 
+    // Force HTTPS (iOS blocks cleartext HTTP)
+    if (uri.scheme == 'http') {
+      uri = uri.replace(scheme: 'https');
+    }
+
+    // Ensure app & version params are present/updated
     final params = Map<String, String>.from(uri.queryParameters);
     params["app"] = appParam;
     params["v"] = versionParam;
